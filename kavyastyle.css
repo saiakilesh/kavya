@@ -1,1 +1,50 @@
-q
+.navbar{
+  background: #E32636;
+  border-color: #E32636;
+  text-transform: uppercase;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #FFFFFF;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.navbar-inverse .navbar-header  a {
+	color: #000000;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: Courier;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #000000;
+}
+
+#white {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	background-color: #ffffff;
+}
+
+.centered {
+    text-align: center;
+}
+
+#akileshtitlehome{
+	font-size: 40px;
+	color: #000000;
+	font-weight: 700;
+}
+
+#studentatupenn {
+	color: #000000;
+	font-size: 20px;
+}
+
+#whiteabout {
+	padding-top: 100px;
+	padding-bottom: 20px;
+	background-color: #ffffff;
+	color: #000000;
+}
