@@ -19,8 +19,13 @@
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-	color: #000000;
+	color: #FFC1CC;
 }
+
+.navbar-inverse .navbar-header  a:hover {
+	color: #FFC1CC;
+}
+
 
 #white {
 	padding-top: 10px;
