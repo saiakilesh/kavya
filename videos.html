@@ -20,7 +20,6 @@
         font-family: 'Open Sans', sans-serif;
         color: black;
         padding: 70px;
-        background-color: #FFDAB9;
       }
       .navbar-inverse {
         background-color: #FFFFFF;
@@ -50,6 +49,28 @@
         font-size: 20px;
         text-align: center;
       }
+      
+      img.bg {
+        /* Set rules to fill background */
+        min-height: 100%;
+        min-width: 1024px;
+      	
+        /* Set up proportionate scaling */
+        width: 100%;
+        height: auto;
+      	
+        /* Set up positioning */
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      
+      @media screen and (max-width: 1024px) { /* Specific to this particular image */
+        img.bg {
+          left: 50%;
+          margin-left: -512px;   /* 50% */
+        }
+      }
     </style>
   </head>
 
@@ -78,6 +99,7 @@
     </nav>
 
     <div class="container">
+      <img src = "http://sreenadh.info/photos/2013-08-04-kavya/photos/_ICK8900.jpg" class = "bg">
       <div class="row">
            <div class = "col-md-12">
              <p id = "video-header"> Videos</p>
