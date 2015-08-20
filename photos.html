@@ -42,32 +42,10 @@
         color: black;
       }
       
-      img.bg {
-        /* Set rules to fill background */
-        min-height: 100%;
-        min-width: 1024px;
-      	
-        /* Set up proportionate scaling */
-        width: 100%;
-        height: auto;
-      	
-        /* Set up positioning */
-        position: fixed;
-        top: 0;
-        left: 0;
-      }
-      
-      @media screen and (max-width: 1024px) { /* Specific to this particular image */
-        img.bg {
-          left: 50%;
-          margin-left: -512px;   /* 50% */
-        }
-      }
-      
-      #index-title {
-        font-weight: 300;
-        font-size: 100px;
-        color: white;
+      #owl-demo .item img{
+          display: block;
+          width: 100%;
+          height: auto;
       }
     </style>
   </head>
@@ -98,6 +76,15 @@
     </nav>
 
     <div class="container">
+      <div class = "row">
+        <div class = "col-md-12">
+          <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="item"><img src="http://sreenadh.info/coverpix/2015.jpg" alt="The Last of us"></div>
+            <div class="item"><img src="http://sreenadh.info/coverpix/2015.jpg" alt="GTA V"></div>
+            <div class="item"><img src="http://sreenadh.info/coverpix/2015.jpg" alt="Mirror Edge"></div>
+          </div>  
+        </div>
+      </div>
     </div>
     
 
