@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,9 +14,12 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    
     <style> 
       body {
         font-family: 'Open Sans', sans-serif;
+        color: white;
+        padding: 70px;
       }
       .navbar-inverse {
         background-color: #FFFFFF;
@@ -36,26 +40,33 @@
         color: black;
       }
       
-      .jumbotron {
-         background-color: #FF9999;
-         color: white;
-         height: 500px;
-         text-align: center;
+      img.bg {
+        /* Set rules to fill background */
+        min-height: 100%;
+        min-width: 1024px;
+      	
+        /* Set up proportionate scaling */
+        width: 100%;
+        height: auto;
+      	
+        /* Set up positioning */
+        position: fixed;
+        top: 0;
+        left: 0;
       }
       
-      .jumbotron h1 {
-        font-size: 120px;
+      @media screen and (max-width: 1024px) { /* Specific to this particular image */
+        img.bg {
+          left: 50%;
+          margin-left: -512px;   /* 50% */
+        }
       }
       
-      img.home-kavya {
-        max-width: 40%;
-        max-height: 40%;
+      #index-title {
+        font-weight: 300;
+        font-size 200;
+        color: white;
       }
-      
-      #home-about {
-        font-size: 18px;
-      }
-      
     </style>
   </head>
 
@@ -76,36 +87,24 @@
           <ul class="nav navbar-nav">
             <li><a href="#about">Photos</a></li>
             <li><a href="http://saiakilesh.github.io/kavya/videos.html">Videos</a></li>
-            <li><a href="#contact">Upcoming Performances</a></li>
-            <li><a href="#contact">Dance Resume</a></li>
+            <li><a href="#contact">Past/Upcoming Performances</a></li>
             <li><a href="http://saiakilesh.github.io/kavya/contact.html">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Indian Classical Bharatanatyam Dancer</h1>
-      </div>
-    </div>
 
     <div class="container">
+      <img src = "http://sreenadh.info/photos/2013-08-04-kavya/photos/_ICK8900.jpg" class = "bg">
       <div class="row">
-          <div class="col-md-6">
-            <img src="http://sreenadh.info/photos/2013-08-04-kavya/header.jpg" class="img-circle img-responsive center-block home-kavya">
-          </div>
-           <div class="col-md-6">
-            <p id = "home-about">The first paragraph of the body should contain the strongest argument, most significant example, cleverest illustration, or an obvious beginning point. The first sentence of this paragraph should include the "reverse hook" which ties in with the transitional hook at the end of the introductory paragraph. The topic for this paragraph should be in the first or second sentence. This topic should relate to the thesis statement in the introductory paragraph. The last sentence in this paragraph should include a transitional hook to tie into the second paragraph of the body. </p>
-          </div>
+           <div class = "col-md-12">
+             <p id = "index-title" > Indian Classical Bharatanatyam Dancer </p>
+           </div>
       </div>
     </div>
+    
 
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted"><i class="fa fa-copyright"></i> Kavya Tangella Dance</p>
-      </div>
-    </footer>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -117,3 +116,4 @@
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
+
