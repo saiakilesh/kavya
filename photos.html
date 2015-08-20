@@ -17,12 +17,10 @@
     
     <!-- Important Owl stylesheet -->
     <link rel="stylesheet" href="http://saiakilesh.github.io/kavya/owl.carousel.css">
-       
     <!-- Default Theme -->
     <link rel="stylesheet" href="http://saiakilesh.github.io/kavya/owl.theme.css">
-       
     <!-- Include js plugin -->
-    <script src="assets/owl-carousel/owl.carousel.js"></script>
+    <script src="http://saiakilesh.github.io/kavya/owl.carousel.js"></script>
     
     <style> 
       body {
@@ -107,6 +105,27 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+      $(document).ready(function() {
+ 
+      $("#owl-demo").owlCarousel({
+     
+          navigation : true, // Show next and prev buttons
+          slideSpeed : 300,
+          paginationSpeed : 400,
+          singleItem:true
+     
+          // "singleItem:true" is a shortcut for:
+          // items : 1, 
+          // itemsDesktop : false,
+          // itemsDesktopSmall : false,
+          // itemsTablet: false,
+          // itemsMobile : false
+     
+      });
+     
+    });
+    </script>
   </body>
 </html>
 
